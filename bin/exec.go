@@ -46,7 +46,7 @@ func main() {
 
 	// Fetching all the ENV's needed
 	utils.GetOsEnv(&engineDetails)
-	log.Infoln("Experiments List: ", engineDetails.Experiments, " ", "Engine Name: ", engineDetails.Name, " ", "appLabels : ", engineDetails.AppLabel, " ", "appNamespace: ", engineDetails.AppNamespace, " ", "appKind: ", engineDetails.AppKind, " ", "Service Account Name: ", engineDetails.SvcAccount)
+	log.Infoln("Experiments List: ", engineDetails.Experiments, " ", "Engine Name: ", engineDetails.Name, " ", "appLabels : ", engineDetails.AppLabel, " ", "appNamespace: ", engineDetails.AppNamespace, " ", "appKind: ", engineDetails.AppKind, " ", "Service Account Name: ", engineDetails.SvcAccount, " ", "Auxiliary App Info: ", engineDetails.AuxiliaryAppInfo)
 
 	// Steps for each Experiment
 	for i := range engineDetails.Experiments {
